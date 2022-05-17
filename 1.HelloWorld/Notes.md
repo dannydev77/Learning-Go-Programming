@@ -12,8 +12,10 @@ This format can be used when we declare a variable but not ready to use it yet
 <!-- method 2 -->
 var a int = 55
 if Go doesn't have enough info to assign the type that you actually want...susceptible to change
+```
 var a float32 = 55
 fmt.Printf("%v, %T", a,a)
+```
 To have more control over the type since go can't easily infer float32 
 
 
