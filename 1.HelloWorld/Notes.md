@@ -8,15 +8,15 @@
 var a int
 	a = 45
 	a = 56
-This format can be used when we declare a variable but not ready to use it yet
+- This format can be used when we declare a variable but not ready to use it yet
 <!-- method 2 -->
 var a int = 55
-if Go doesn't have enough info to assign the type that you actually want...susceptible to change
+- if Go doesn't have enough info to assign the type that you actually want...susceptible to change
 ```
 var a float32 = 55
 fmt.Printf("%v, %T", a,a)
 ```
-To have more control over the type since go can't easily infer float32 
+- To have more control over the type since go can't easily infer float32 
 
 
 <!-- Method 3 -->
@@ -24,10 +24,11 @@ a := 55
 
 Go will infer automactically
 examples: 
-    a := 44 -> int
-    a := 44. -> float64
+    - a := 44 -> int
+    - a := 44. -> float64
 
 <!-- method 4 -->
+```
 
 // Declaring at the package level
 // you have to use the full declaration syntax
@@ -39,8 +40,10 @@ func main() {
 	fmt.Println(a)
 	fmt.Println("===================================")
 }
+```
 ## shadowing
 a variable at the inner scope takes precedence more... called shadowing
+```
 var a int = 42
 
 func main() {
@@ -50,6 +53,7 @@ func main() {
 	fmt.Println("===================================")
 }
 output: 77
+```
 
 # Variables naming Conventions
 #### at the package level
